@@ -1,0 +1,37 @@
+{
+    "name": "DeleteServiceMessagesBot - Service Message Deleter Bot",
+    "description": "A telegram bot which can delete service messages.",
+    "keywords": [
+        "telegram",
+        "service",
+        "service-message"
+    ],
+    "repository": "https://github.com/HuzunluArtemis/DeleteServiceMessagesBot",
+    "env": {
+        "APP_ID": {
+            "description": "Get this value from https://my.telegram.org",
+            "value": ""
+        },
+        "API_HASH": {
+            "description": "Get this value from https://my.telegram.org",
+            "value": ""
+        },
+        "BOT_TOKEN": {
+            "description": "Telegram bot token. From BotFather",
+            "value": ""
+        }
+    },
+    "addons": [
+    ],
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
