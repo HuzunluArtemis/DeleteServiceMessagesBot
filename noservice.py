@@ -35,7 +35,7 @@ async def helps(client, message: Message):
 		reply_markup=None
 	#
 	tamisim = Message.from_user.first_name
-   	if Message.from_user.last_name is not None: tamisim += f" {Message.from_user.last_name}"
+   if Message.from_user.last_name is not None: tamisim += f" {Message.from_user.last_name}"
 	DONATESTARTTEXT = f"Esenlikler / Hi {tamisim}\n\n"
 	DONATESTARTTEXT += "🇹🇷 Servis mesajlarını silen reklamsız, basit bir botum.\n(üye eklendi, üye katıldı, şu bunu ekledi vb. mesajlar)"
 	DONATESTARTTEXT += "\nYapman gereken beni grubuna yönetici olarak ekleyip\nsilme yetkisi vermek. Sonrasını bana bırak."
